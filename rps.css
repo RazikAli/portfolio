@@ -1,0 +1,78 @@
+/* Import Google font - Audiowide */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Audiowide", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  height: 100vh;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.option_image img {
+  width: 50px;
+}
+.option_images {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 2.5rem;
+  justify-content: space-evenly;
+}
+.container.start .option_images {
+  pointer-events: none;
+}
+.option_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.option_image:hover {
+  opacity: 1;
+}
+.option_image.active {
+  opacity: 1;
+}
+.option_image img {
+  pointer-events: none;
+}
+.option_image p {
+  color: #e82abf;
+  font-size: 1.235rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+/* Responsive media query code for small devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+  .result_images img {
+    width: 80px;
+  }
+}
+/* Responsive media query code for small devices */
+@media (max-width: 500px) {
+  .option_images {
+    justify-content: space-between;
+  }
+  .option_image img {
+    width: 40px;
+  }
+}
+
+
+
+
+
+

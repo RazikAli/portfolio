@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+    
+    <body>
+        <!-- Navbar header section -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2 class="logo-heading">Razik Ali</h2>
+                </div>
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list-items">
+                            <a class="links" href="#home">
+                                Home</a>
+                        </li>
+                        <li class="menu-list-items">
+                            <a class="links" href="#portfolio">
+                                Portfolio</a>
+                        </li>
+                        <li class="menu-list-items">
+                            <a class="links" href="#about">
+                                About </a>
+                        </li>
+                        <li class="menu-list-items">
+                            <a class="links" href="#languages">
+                                Coding Languages </a>
+                        </li>
+                        <li class="menu-list-items">
+                            <a class="links" href="#contact"> 
+                                Contact Me </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Main hero banner -->
+        <section id="home" class="hero">
+            <div class="intro">
+                <div class="headings">
+                    <h3 class="greet-heading">Hello, I'm</h3>
+                    <h1 class="my-heading">Razik Ali</h1>
+                    <h4 class="sub-heading">
+                        a new IT and software junior who is ready to learn and gain new skills 
+                    </h4>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio-heading">
+                <h1 class="my-heading text-center">Featured Portfolio</h1>
+            </div>
+            <div>
+                <div class="my-row">
+                    <div class="my-col">
+                        <div class="my-card port-card">
+                            <h3 class="greet-heading blue-text">
+                                database-design car sales team 
+                            </h3>
+                            <p class="small-para blue-text">sql</p>
+                        </div>
+                    </div>
+                    <div class="my-col">
+                        <div class="my-card port-card">
+                            <h3 class="greet-heading blue-text">
+                                Weather app (with surnise and sunset app)
+                            </h3>
+                            <a href="C:\Users\arazi\justit\week1\portfolio\weather_app.html">link</a>
+                            <p class="small-para blue-text">frontend</p>
+                        </div>
+                    </div>
+                    <div class="my-col">
+                            <div class="my-card port-card">
+                                <h3 class="greet-heading blue-text">
+                                    rock paper scissor game
+                                </h3>
+                                <a href="C:\Users\arazi\justit\week1\portfolio\rps.html">link</a>
+                                <p class="small-para blue-text">frontend</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about-text">
+                <h1 class="my-heading">About Me</h1>>
+                <p> I am just a recently graduated computer scientist that is looking to get some work his way so i can use that experience to improve his skills and hopefully be able to develope code on his own and up to high standard </p>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="languages" id="languages">
+            <div class="languages-heading">
+                <h1 class="my-heading text-center">languages</h1>
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-java"></i>
+                    <p>Java</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-database"></i>
+                    <p>SQL</p>
+                </div>
+                <div class="card">
+                    <i src="https://tse4.mm.bing.net/th/id/OIP.hr5uig0UZcIzcf7oc-n24AHaIp?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"></i>
+                    <p>C#</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact me section -->
+        <section class="contact" id="contact">
+            <div class="contact-heading">
+                <h1 class="my-heading text-center">Contact Me</h1>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <h1 class="greet-heading">Get In Touch</h1>
+                    <form class="contact-form"  method="post" action="arazik500@gmail.com">
+                        <input class="form-controls" type="text" placeholder="Your Name">
+                        <input class="form-controls" type="text" placeholder="Your Email">
+                        <input class="form-controls" type="text" placeholder="Your Phone">
+                        <textarea class="form-controls" placeholder="Write your message" name="message" id="" cols="30"
+                            rows="10"> 
+                        </textarea>
+                        <input class="form-btn btn common-btn" type="submit" value="Send email">
+                    </form>
+                </div>
+                <div class="contact-details">
+                    <h1 class="greet-heading">My Contact Details</h1>
+                    <div class="details">
+                        <h5 class="contact-heading">EMAIL</h5>
+                        <p class="contact-text">arazik500@gmail.com</p>
+                    </div>
+                    <div class="details">
+                        <h5 class="contact-heading">PHONE</h5>
+                        <p class="contact-text">+44 7853208796</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <footer class="footer">
+            <div class="footer-content text-center">
+                <div class="social-links">
+                    <div class="footer-menu">
+                        <ul class="footer-menu-list">
+                            <li class="footer-list-items">
+                                <a class="footer-links">
+                                    <a href="https://www.linkedin.com/in/razik-ali-53b227328/">IN</a>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+            integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+            </script>
+        <script src="portfolio.js"></script>
+    </body>
+    
+</html>
+
+
+
+

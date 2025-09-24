@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.con {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-group > label {
+    font-size: 19px;
+}
+
+.form-group > input {
+    font-size: 19px;
+    padding: 4px;
+    border-radius: 2px;
+    border: 1px solid;
+}
+
+.form > button {
+    background-color: #fda085;
+    color: #fff;
+    font-size: 19px;
+    padding: 4px 30px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.form > button:hover {
+    background-color: #f77d5c;
+}
+
+#resultContainer {
+    margin-top: 20px;
+    text-align: center;
+}
