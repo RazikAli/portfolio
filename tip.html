@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="tip.css">
+    <script type="text/javascript" src="tip.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>TIP CALCULATOR</h1>
+        <div class="wrapper">
+
+            <p>Bill Amount (£)</p>
+            <input type="text" id="amount" placeholder="Amount to be paid"> 
+            <p>How was the service ?</p>
+            <select id="services">
+                <option selected disabled hidden>
+                    tip percentage option 1
+                </option>
+                <option value="0.05">5% </option>
+                <option value="0.10">10% </option>
+                <option value="0.15">15% </option>
+                <option value="0.20">20% </option>
+                <option value="0.25">25% </option>
+            </select>
+            <br>
+            <br>
+            <input type="number" id="tips" placeholder="tip percentage option 2" min="0">
+            <p>Total number of persons</p>
+            <input type="text" id="persons" placeholder="Number of people sharing the bill">
+            <br>
+            <br>
+            <div>
+                <label for="server">where did you go?</label>
+                <input type="text" id="server">
+                <label for="server">who is the tip going to?</label>
+                <input type="text" id="server">
+            </div>
+            <p id="date"></p>
+            <button id="calculate">Calculate</button>
+        </div>
+        <div class="tip">
+            <p>Tip Amount</p>
+            £<span id="total">0</span>
+            <span id="each">each</span>
+        </div>
+    </div>
+<script>
+    //const d = new Date();
+    //document.getElementById("date").innerHTML = d;
+
+    const zeroFill = n => {
+        return ('0' + n).slice(-2);
+    }
+    const interval = setInterval(() => {
+        // Get current time
+        const now = new Date();
+        // Format date as in mm/dd/aaaa hh:ii:ss
+        const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+        // Display the date and time on the screen using div#date-time
+        document.getElementById('date').innerHTML = dateTime;
+    }, 1000);
+ </script>
+</body>
+
+</html>
